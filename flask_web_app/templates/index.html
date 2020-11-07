@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Art Tutorials</title>
+        <script type="text/javascript" src = "{{ url_for('static', filename = 'js/main.js')}}"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+<body>
+
+<h1>Sign up for Art Class</h1>
+
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="first" placeholder="First" required><br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="last" placeholder="Last"><br>
+        <label for="filefield">Picture</label>
+        <input type="file" id="filefield" name="filename">
+        <input type="submit" value="Submit" onclick="myFunction()">
+
+    </form>
+
+    <div class="red">
+    <p>Some value that will change when I click the button</p>
+</div>
+</body>
+
+</html>
